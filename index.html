@@ -1,0 +1,718 @@
+```html id="r9z2kx"
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rosalia Indah Transport</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f5f5;
+    color:#333;
+}
+
+/* NAVBAR */
+
+.navbar{
+    width:100%;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    position:fixed;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#c40000;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+}
+
+.navbar ul li{
+    margin-left:30px;
+}
+
+.navbar ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.navbar ul li a:hover{
+    color:#c40000;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)),
+	
+    url('https://rosaliaindahpublicrelations.wordpress.com/wp-content/uploads/2026/05/header-rute-baru-rosalia-indah-1.png');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:24px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#c40000;
+    color:white;
+    text-decoration:none;
+    border-radius:40px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#ffcc00;
+    color:#222;
+}
+
+/* SECTION */
+
+section{
+    padding:90px 10%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.title h2{
+    font-size:42px;
+    color:#c40000;
+}
+
+.title p{
+    color:#666;
+    margin-top:10px;
+}
+
+/* ABOUT */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#c40000;
+    margin-bottom:15px;
+}
+
+/* FLEET */
+
+.fleet{
+    background:#fff;
+}
+
+.fleet-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.fleet-item{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.fleet-item img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.fleet-content{
+    padding:25px;
+}
+
+.fleet-content h3{
+    color:#c40000;
+    margin-bottom:10px;
+}
+
+/* NEWS */
+
+.news-box{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.news-box img{
+    width:100%;
+    height:380px;
+    object-fit:cover;
+}
+
+.news-content{
+    padding:30px;
+}
+
+.news-content h3{
+    color:#c40000;
+    margin-bottom:15px;
+}
+
+/* GALLERY */
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:18px;
+    transition:0.4s;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.03);
+}
+
+/* FOOTER */
+
+footer{
+    background:#111;
+    color:white;
+    padding:60px 10%;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.footer-box h3{
+    margin-bottom:20px;
+    color:#ffcc00;
+}
+
+.footer-box p{
+    color:#ccc;
+    margin-bottom:10px;
+}
+
+.copy{
+    text-align:center;
+    margin-top:40px;
+    color:#888;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:42px;
+}
+
+.hero-content p{
+    font-size:18px;
+}
+
+.navbar{
+    flex-direction:column;
+}
+
+.navbar ul{
+    margin-top:15px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<div class="navbar">
+
+    <div class="logo">Rosalia Indah</div>
+
+    <ul>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#armada">Armada</a></li>
+        <li><a href="#berita">Berita</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+    </ul>
+
+</div>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Rosalia Indah Transport</h1>
+
+        <p>
+            Aman, Nyaman, dan Terpercaya untuk Perjalanan Anda
+        </p>
+
+        <a href="#profil" class="btn">Selengkapnya</a>
+
+    </div>
+
+</section>
+
+<!-- PROFIL -->
+
+<section id="profil">
+
+    <div class="title">
+        <h2>Profil Perusahaan</h2>
+        <p>Perusahaan transportasi terpercaya di Indonesia</p>
+    </div>
+
+<div style="font-family:Arial,sans-serif;">
+
+
+      
+      <!-- Logo -->
+      <div>
+        
+          <center><img src="https://www.rosalia-indah.co.id/assets/front/assets/img/icon/logo1.png" 
+          alt="Logo Rosalia Indah"
+          style="height:60px;">
+        </center>
+	</a>
+      </div>
+
+      
+      <!-- Tombol -->
+      <div style="display:flex;gap:10px;margin-top:10px;">
+        
+        
+        </a>
+
+       
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+ 
+
+</div>
+```
+
+<div class="about-company" style="font-family: Arial, sans-serif; line-height: 1.8; color: #333;">
+
+    <div style="text-align: center; margin-bottom: 30px;">
+        <img src="https://www.rosalia-indah.co.id/assets/front/assets/img/perusahaan/header-perusahaan.jpg" 
+        alt="PT Rosalia Indah Transport" 
+        style="width:100%; max-width:900px; border-radius:10px;">
+    </div>
+
+    <h1 style="text-align:center; color:#b30000;">TENTANG KAMI</h1>
+
+    <p style="text-align:justify;">
+        <strong>PT Rosalia Indah Transport</strong> merupakan perusahaan transportasi darat 
+        yang telah berkembang menjadi salah satu perusahaan otobus terbesar di Indonesia. 
+        Perusahaan ini melayani perjalanan Antar Kota Antar Provinsi (AKAP), travel, 
+        serta layanan pariwisata dengan armada modern dan pelayanan profesional.
+    </p>
+
+    <h2 style="color:#b30000;">Sejarah Perusahaan</h2>
+
+    <p style="text-align:justify;">
+        Didirikan pada tahun 1983 oleh Bapak Yustinus Soeroso dan 
+        Ibu Yustina Rahyuni Soeroso, Rosalia Indah memulai usaha 
+        transportasi dengan satu armada Colt Diesel trayek Solo – Blitar. 
+        Seiring perkembangan waktu, perusahaan berkembang pesat hingga memiliki 
+        ratusan armada dan jaringan agen di berbagai wilayah Indonesia.
+    </p>
+
+    <div style="text-align:center; margin:20px 0;">
+        <img src="https://www.rosalia-indah.co.id/assets/front/assets/img/perusahaan/perusahaan-timeline-1.jpg" 
+        alt="Sejarah Rosalia Indah" 
+        style="width:100%; max-width:700px; border-radius:10px;">
+    </div>
+
+    <h2 style="color:#b30000;">Visi</h2>
+
+    <p>
+        Menjadi perusahaan transportasi darat yang unggul dalam kualitas pelayanan 
+        dan keselamatan di Indonesia.
+    </p>
+
+    <h2 style="color:#b30000;">Misi</h2>
+
+    <ol>
+        <li>Memberikan pelayanan prima demi kepuasan pelanggan.</li>
+        <li>Menyediakan sarana dan prasarana transportasi yang handal.</li>
+        <li>Menerapkan sistem manajemen keselamatan, mutu, lingkungan, dan K3.</li>
+    </ol>
+
+    <h2 style="color:#b30000;">Motto</h2>
+
+    <p style="font-size:22px; font-weight:bold; text-align:center;">
+        “Mitra Setia Perjalanan Anda”
+    </p>
+
+
+    <div class="about-grid">
+
+        <div class="card">
+            <h3>Visi</h3>
+            <p>
+                Menjadi perusahaan transportasi terbaik dengan
+                pelayanan profesional dan berkualitas.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Misi</h3>
+            <p>
+                Mengutamakan keselamatan, kenyamanan,
+                dan kepuasan pelanggan.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Struktur Organisasi</h3>
+            <p>
+                Direktur Utama<br>
+                Manager Operasional<br>
+                Manager Pelayanan<br>
+                Staff Administrasi
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Bidang Usaha</h3>
+            <p>
+                Jasa transportasi darat AKAP,
+                travel, pariwisata, dan logistik.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ARMADA -->
+
+<section id="armada" class="fleet">
+
+    <div class="title">
+        <h2>Armada Unggulan</h2>
+        <p>Fasilitas modern dan nyaman untuk perjalanan</p>
+    </div>
+
+    <div class="fleet-grid">
+
+        <div class="fleet-item">
+
+            <img src="https://rosaliaindahpublicrelations.wordpress.com/wp-content/uploads/2026/05/exeplus.png">
+
+            <div class="fleet-content">
+
+                <h3>Executive Class</h3>
+
+                <p>
+                    Kursi nyaman, AC, hiburan,
+                    dan fasilitas perjalanan premium.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="fleet-item">
+
+            <img src="https://rosaliaindahpublicrelations.wordpress.com/wp-content/uploads/2026/05/rosalia-double-decker.png">
+            <div class="fleet-content">
+
+                <h3>Double Decker</h3>
+
+                <p>
+                    Armada modern dengan kapasitas besar
+                    dan kenyamanan maksimal.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="fleet-item">
+
+            <img src="https://rosaliaindahpublicrelations.wordpress.com/wp-content/uploads/2026/05/parwis.png">
+
+            <div class="fleet-content">
+
+                <h3>Pariwisata</h3>
+
+                <p>
+                    Bus wisata eksklusif untuk perjalanan
+                    keluarga dan perusahaan.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- BERITA -->
+
+<section id="berita">
+
+    <div class="title">
+        <h2>Berita Terbaru</h2>
+        <p>Informasi dan kegiatan perusahaan</p>
+    </div>
+
+    <div class="container">
+
+    <div class="header">
+       <center> <h1>PRESS RELEASE</h1>
+        <h2>PT Rosalia Indah Transport</h2>
+        <p>Karanganyar, Jawa Tengah – 11 Desember 2025</p>
+    </div>
+<br>
+
+
+    <div class="image">
+       <center> <img src=https://rosaliaindahpublicrelations.wordpress.com/wp-content/uploads/2026/05/presrelease.png>
+    </center> </div>
+<br>
+
+    <h2>Klarifikasi Resmi PT Rosalia Indah Transport Terkait Video Viral di Media Sosial</h2>
+<br>
+
+
+    <p>
+        PT Rosalia Indah Transport menyampaikan klarifikasi sekaligus permohonan maaf kepada masyarakat terkait beredarnya video viral di media sosial yang melibatkan salah satu kru perusahaan.
+    </p>
+
+    <p>
+        Klarifikasi ini disampaikan sebagai bentuk tanggung jawab perusahaan atas kejadian yang menimbulkan ketidaknyamanan di tengah masyarakat serta untuk meluruskan informasi yang beredar luas di media sosial.
+    </p>
+
+    <p>
+<br>
+
+        PT Rosalia Indah Transport sebagai perusahaan jasa transportasi darat (AKAP) menegaskan bahwa pihak manajemen telah mengambil langkah cepat dengan melakukan evaluasi internal terhadap kru yang terlibat dalam insiden tersebut.
+    </p>
+
+    <p>
+        Perusahaan juga menyatakan akan meningkatkan pembinaan serta pelatihan kepada seluruh karyawan, khususnya dalam aspek komunikasi interpersonal dan pelayanan kepada pelanggan, guna mencegah kejadian serupa di masa mendatang.
+    </p>
+
+    <div class="quote">
+        “Kami menyampaikan permohonan maaf atas ketidaknyamanan yang terjadi dan berkomitmen untuk terus melakukan evaluasi serta peningkatan kualitas pelayanan kepada pelanggan.”
+    </div>
+
+    <p>
+        Informasi klarifikasi ini disampaikan melalui akun Instagram resmi 
+        <strong>@rosaliaindah.official</strong> sebagai media komunikasi perusahaan dalam menjangkau masyarakat secara luas dan cepat.
+    </p>
+
+    <p>
+<br>
+
+        Langkah ini dilakukan sebagai bagian dari komitmen PT Rosalia Indah Transport dalam menjaga kepercayaan publik serta mempertahankan kualitas pelayanan yang profesional dan beretika.
+    </p>
+
+    <p>
+        Manajemen PT Rosalia Indah Transport menegaskan bahwa perusahaan menjunjung tinggi standar pelayanan dan akan terus melakukan perbaikan berkelanjutan demi kenyamanan dan keamanan pelanggan.
+    </p>
+
+  <br>
+
+        Dengan adanya klarifikasi ini, PT Rosalia Indah Transport berharap masyarakat dapat memahami situasi yang terjadi serta tetap mempercayakan kebutuhan transportasi kepada layanan perusahaan.
+    </p>
+
+    <div class="footer">
+        <strong>PT Rosalia Indah Transport</strong><br>
+        Instagram:
+        <a href="https://www.instagram.com/rosaliaindah.official" target="_blank">
+            @rosaliaindah.official
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
+<br>
+<br>
+
+
+
+            <h3>Kampanye Keselamatan Perjalanan 2026</h3>
+
+            <p>
+                PT Rosalia Indah mengadakan kegiatan kampanye sosial
+                mengenai pentingnya keselamatan dan kenyamanan
+                penumpang selama perjalanan.
+            </p>
+
+            <br>
+
+            <p>
+                Kegiatan dilakukan melalui edukasi di terminal,
+                pembagian brosur, serta promosi media sosial.
+<br>
+<br>
+<br>
+
+       <div class="image" style="text-align:center;"> 
+<img src="https://rosaliaindahpublicrelations.wordpress.com/wp-content/uploads/2026/05/perjalanan-aman-dan-nyaman-untuk-semua.png" style=" width:70%; max-width:500px; height:auto; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.15); "> 
+</div>
+
+    </div>
+
+</section>
+
+<!-- GALERI -->
+
+<section id="galeri">
+
+    <div class="title">
+        <h2>Galeri Kegiatan</h2>
+        <p>Dokumentasi promosi dan kampanye sosial</p>
+    </div>
+
+    <div class="gallery-grid">
+
+     
+        <img src="https://rosaliaindahpublicrelations.wordpress.com/wp-content/uploads/2026/05/experience-riplus.jpg">
+
+	<img src="https://rosaliaindahpublicrelations.wordpress.com/wp-content/uploads/2026/05/perjalanan-aman-dan-nyaman-untuk-semua.png">
+
+        <img src="https://rosaliaindahpublicrelations.wordpress.com/wp-content/uploads/2026/05/experience-armada.jpg">
+	
+	
+        <img src="https://rosaliaindahpublicrelations.wordpress.com/wp-content/uploads/2026/05/awak-bus-ri.png">
+	<img src="https://rosaliaindahpublicrelations.wordpress.com/wp-content/uploads/2026/05/penjualan-tiket-nataru-2026.jpg">		
+	<img src="https://rosaliaindahpublicrelations.wordpress.com/wp-content/uploads/2026/05/mci00008.jpg">
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer id="kontak">
+
+    <div class="footer-grid">
+
+        <div class="footer-box">
+
+            <h3>Tentang Kami</h3>
+
+            <p>
+                PT Rosalia Indah Transport merupakan
+                perusahaan transportasi darat terpercaya
+                di Indonesia.
+            </p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Kontak</h3>
+
+            <p>Email : info@rosaliaindah.co.id</p>
+            <p>Telepon : 021-12345678</p>
+            <p>Instagram : @rosaliaindahtransport</p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Alamat</h3>
+
+            <p>
+                Karanganyar, Jawa Tengah, Indonesia
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="copy">
+        © 2026 Rosalia Indah Transport
+    </div>
+
+</footer>
+
+</body>
+</html>
+```
